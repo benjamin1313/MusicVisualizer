@@ -2,6 +2,7 @@ import numpy as np
 import sounddevice as sd
 import pygame
 
+# sounddevice variabels.
 fs=44000
 duration = 0.25 # seconds
 
@@ -41,7 +42,7 @@ while running:
     h6=mul*(np.real((1/1795)*np.sum((X[5*1795:6*1795]**2))))
     h7=mul*(np.real((1/1795)*np.sum((X[6*1795:7*1795]**2))))
 
-    # Draw a solid blue circle in the center
+    # Draws the bars.
     pygame.draw.rect(screen, (255,255,255),(20,screenHight,100,-h1))
     pygame.draw.rect(screen, (255,255,255),(130,screenHight,100,-h2))
     pygame.draw.rect(screen, (255,255,255),(240,screenHight,100,-h3))

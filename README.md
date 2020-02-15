@@ -1,4 +1,4 @@
-As a little hubby project I'm trying to create a music visualizer using python.
+As a little hobby project I'm trying to create a music visualizer using python.
 
 ToDo:
 - make it update more often.
